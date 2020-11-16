@@ -1,0 +1,22 @@
+
+<!-- プロパティ値をアプリ独自のルールで加工する - 算出プロパティ -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <!-- 文法的には正しいが、複雑な式は可読性の面で良くない、修正も困難 -->
+        <p>{{ email.split('@')[0].toLowerCase() }}</p>
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="compute_bad.js"></script>
+    </body>
+
+    </html>
+
