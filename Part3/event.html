@@ -1,0 +1,25 @@
+<!-- イベントの基本 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      
+      <div id="app">
+        <!-- v-on:イベント名="メソッド名" -->
+        <!-- v-on:clickは@clickの省略構文でも可 -->
+        <button v-on:click="onclick">クリック</button>
+        <p>{{ message }}</p>
+      </div>
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="event.js"></script>
+    </body>
+
+    </html>
+

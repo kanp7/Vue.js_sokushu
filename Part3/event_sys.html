@@ -1,0 +1,29 @@
+
+<!-- システムキーとの組み合わせを検知する -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+
+      <div id="app">
+        <form>
+          <!-- テキストエリア上で[Alt(option)] + [Enter]を押下することで、簡易ヘルプを表示 -->
+          <!-- [Ctrl] + [Alt] + [Enter]のように余計なキーが押されてもイベントを検知するので、厳密に検知したい場合はexact修飾子を利用する。 -->
+          <!-- <textarea id="message" v-on:keyup.alt.enter.exact="help" v-model="message"></textarea> -->
+          <label for="message">メッセージ:</label><br />
+          <textarea id="message" v-on:keyup.alt.enter="help" v-model="message"></textarea>
+        </form>
+      </div>
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="event_sys.js"></script>
+    </body>
+
+    </html>
+

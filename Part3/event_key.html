@@ -1,0 +1,30 @@
+<!-- 
+キーボードからの入力を識別する - キー修飾子 -->
+
+<!-- [構文] キー修飾子
+v-on:keyup.キー修飾子="…" -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+
+      <div id="app">
+        <form>
+          <!-- テキストボックスで[Esc]キーが押された場合に、テキストボックスの値をクリアする -->
+          <label for="name">氏名:</label>
+          <input type="text" id="name" v-on:keyup.esc="clear" v-model="name">
+        </form>
+      </div>
+      
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="event_key.js"></script>
+    </body>
+
+    </html>
+

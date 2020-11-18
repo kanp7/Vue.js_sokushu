@@ -1,0 +1,27 @@
+
+<!-- 定型的なイベント処理を宣言的に指定するイベント修飾子 -->
+
+<!-- v-on:イベント名.修飾子="…" -->
+<!-- 修飾子は、ディレクティブの機能を制御するための指示の一種。[.]区切りで指定 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+
+      <div id="app">
+        <button v-on:click.once="onclick">現在時刻</button>
+        <p>{{ message }}</p>
+      </div>
+      
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="event_once.js"></script>
+    </body>
+
+    </html>
+
