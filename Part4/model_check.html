@@ -1,0 +1,28 @@
+
+<!-- チェックボックス（単一） -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+
+      <div id="app">
+        <form>
+          <label for="agree">同意する : </label>
+          <!-- boolean値がデフォルトだが、値をセットすることもできる  true-value="○" false-value="✕" -->
+          <input type="checkbox" id="agree" v-model="agree" />
+        </form>
+        <div>回答 : {{ agree }} </div>
+      </div>
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_check.js"></script>
+    </body>
+
+    </html>
+

@@ -1,0 +1,25 @@
+
+<!-- 入力値の前後の空白を除去する - trim修飾子 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <form>
+          <label for="message">メッセージ : </label>
+          <input type="text" id="message" v-model.trim="message" v-on:change="onchange" />
+        </form>
+      </div>
+      
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_trim.js"></script>
+    </body>
+
+    </html>
+

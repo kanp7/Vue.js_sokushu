@@ -1,0 +1,29 @@
+
+<!-- 選択ボックス -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+      <form>
+        <select v-model="language" multiple size="4">
+          <option value="">話せる言語は？</option>
+          <option>日本語</option>
+          <option>英語</option>
+          <option>ドイツ語</option>
+        </select>
+        <p>回答 : {{ language }}</p>
+      </form>  
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_select_multi.js"></script>
+    </body>
+
+    </html>
+

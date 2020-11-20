@@ -1,0 +1,33 @@
+
+<!-- チェックボックス（複数） -->
+<!-- 複数のチェックボックスに同一のv-modelを渡すこと -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+
+      <div id="app">
+        <form>
+          <div>話せる言語は？</div>
+          <label for="japanese">日本語</label>
+          <input type="checkbox" id="japanese" value="日本語" v-model="language" />
+          <label for="english">英語</label>
+          <input type="checkbox" id="english" value="英語" v-model="language" />
+          <label for="german">ドイツ語</label>
+          <input type="checkbox" id="german" value="ドイツ語" v-model="language" />                    
+        </form>
+        <div>回答 : {{ language }} </div>
+      </div>
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_check_multi.js"></script>
+    </body>
+
+    </html>
+

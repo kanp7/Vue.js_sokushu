@@ -1,0 +1,30 @@
+
+<!-- 双方向データバインディングのカスタマイズ -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <form>
+          <label for="name">メールアドレス : </label>
+          <textarea v-bind:value="emails.join(';')" v-on:input="emails=$event.target.value.split(';')"></textarea>
+        </form>
+        <ul>
+          <!-- 配列emailsの内容を列挙 -->
+          <li v-for="email in emails">
+            {{ email }}
+          </li>
+        </ul>
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_custom.js"></script>
+    </body>
+
+    </html>
+

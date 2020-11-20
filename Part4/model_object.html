@@ -1,0 +1,34 @@
+
+<!-- オブジェクトをバインドする -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      
+      <div id="app">
+        <form>
+          <label for="kb">1KB : </label>
+          <input type="radio" id="kb" v-model="unit" v-bind:value="{ name:'キロバイト', size: 1024 }"/><br />
+          <label for="mb">1MB : </label>
+          <input type="radio" id="mb" v-model="unit" v-bind:value="{ name:'メガバイト', size: 1048576 }"/><br />
+          <label for="gb">1GB : </label>
+          <input type="radio" id="gb" v-model="unit" v-bind:value="{ name: 'ギガバイト', size: 1073742000 }" />
+        </form>
+
+        <!-- バインドされたオブジェクトの中身を表示 -->
+        <div>選択値 : {{ unit.name }}/{{ unit.size }}byte</div>
+
+      </div>
+
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_obj.js"></script>
+    </body>
+
+    </html>
+

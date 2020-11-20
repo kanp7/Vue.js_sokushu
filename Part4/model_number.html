@@ -1,0 +1,24 @@
+
+<!-- 入力値を数値としてバインドする - number修飾子 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <form>
+          <label for="time">50m走タイム : </label>
+          <input type="text" id="time" v-model.number="time" v-on:change="onchange" />
+        </form>
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_number.js"></script>
+    </body>
+
+    </html>
+

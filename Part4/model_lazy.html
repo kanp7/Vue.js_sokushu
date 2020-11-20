@@ -1,0 +1,27 @@
+
+<!-- バインドのタイミングを遅延させる - lazy修飾子 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <form>
+          <label for="name">氏名 : </label>
+          <!-- lazy修飾子によりフォーカスが外れたタイミングで入力値が変化 -->
+          <input type="text" id="name" v-model.lazy="myName" />
+        </form>
+        <div>こんにちは、{{ myName }} さん！</div>
+      </div>
+      
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/model_lazy.js"></script>
+    </body>
+
+    </html>
+
