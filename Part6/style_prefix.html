@@ -1,3 +1,6 @@
+
+<!-- ベンダープレフィックスを自動補完する -->
+
 <!DOCTYPEhtml>
   <htmllang="ja">
 
@@ -8,10 +11,13 @@
 
     <body>
       <div id="app">
-        
+        <a v-bind:style="{ 'tap-highlight-color': 'Yellow' }"
+        v-bind:href="url">
+          {{ url }}
+        </a>
       </div>
         <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
-        <script src="./lib/template.js"></script>
+        <script src="./lib/style_prefix.js"></script>
     </body>
 
     </html>

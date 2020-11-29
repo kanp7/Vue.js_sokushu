@@ -1,3 +1,6 @@
+
+<!-- 属性に値をバインドする - v- bind -->
+
 <!DOCTYPEhtml>
   <htmllang="ja">
 
@@ -8,11 +11,15 @@
 
     <body>
       <div id="app">
-        
+        <form>
+          <label for="message">メッセージ:</label>
+          <input type="text" id="message" v-bind="attrs" />
+        </form>
       </div>
         <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
-        <script src="./lib/template.js"></script>
+        <script src="./lib/bind_obj.js"></script>
     </body>
 
     </html>
+
 

@@ -1,3 +1,6 @@
+
+<!-- 複数のスタイル情報を適用する -->
+
 <!DOCTYPEhtml>
   <htmllang="ja">
 
@@ -8,10 +11,12 @@
 
     <body>
       <div id="app">
-        
+        <div v-bind:style="[color, big]">
+          {{ message }}
+        </div>
       </div>
         <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
-        <script src="./lib/template.js"></script>
+        <script src="./lib/style_multi.js"></script>
     </body>
 
     </html>

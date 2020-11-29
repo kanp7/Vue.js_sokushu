@@ -8,10 +8,12 @@
 
     <body>
       <div id="app">
-        
+        <div class="big" v-bind:class="{color: true, frame:isChange }">
+          {{ message }}
+        </div>
       </div>
         <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
-        <script src="./lib/template.js"></script>
+        <script src="./lib/class.js"></script>
     </body>
 
     </html>

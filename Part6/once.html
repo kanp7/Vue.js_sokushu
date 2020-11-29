@@ -1,0 +1,23 @@
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <form>
+          <label for="name">氏名： </label>
+          <input type="text" id="name" v-model="name" />
+        </form>
+        <div v-once>こんにちは、{{ name }}さん。</div>
+        <div>こんにちは、{{ name }}さん。</div>
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/once.js"></script>
+    </body>
+
+    </html>
+

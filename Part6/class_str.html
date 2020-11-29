@@ -1,3 +1,6 @@
+
+<!-- v-bind:classのさまざまな設定方法 -->
+
 <!DOCTYPEhtml>
   <htmllang="ja">
 
@@ -8,10 +11,13 @@
 
     <body>
       <div id="app">
-        
+        <!-- 文字列配列として渡す -->
+        <div class="big" v-bind:class="[ colorClass,frameClass ]">
+          {{ message }}
+        </div>
       </div>
         <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
-        <script src="./lib/template.js"></script>
+        <script src="./lib/class_str.js"></script>
     </body>
 
     </html>
