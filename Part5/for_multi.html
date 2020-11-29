@@ -1,0 +1,25 @@
+
+<!-- 異なる要素のセットを繰り返し出力するtemplate要素 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <template v-for="a in articles">
+          <header>{{ a.title }} </header>
+          <div>{{ a.description }}</div>
+          <footer>{{ a.author }}著</footer>
+        </template>
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/for_multi.js"></script>
+    </body>
+
+    </html>
+

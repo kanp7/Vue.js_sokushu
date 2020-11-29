@@ -1,0 +1,31 @@
+
+<!-- 配列の絞り込みには算出プロパティを利用する -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+
+      <div id="app">
+        <table class="table">
+          <th>ISBN</th><th>書名</th><th>価格</th>
+          <tr v-for="b in cheapBooks">
+            <td>{{ b.isbn }}</td>
+            <td>{{ b.title }}</td>
+            <td>{{ b.price }}</td>
+          </tr>
+        </table>
+      </div>
+      
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/for_filter.js"></script>
+    </body>
+
+    </html>
+
