@@ -1,0 +1,25 @@
+
+<!-- テンプレート配下のコンテンツを任意の場所に反映させる -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app" class="jumbotron">
+        <my-teleport></my-teleport>
+      </div>
+      <hr />
+
+      <!-- b.コンポーネントからのテレポート先 -->
+      <div id="result" class="alert alert-success"></div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/teleport.js"></script>
+    </body>
+
+    </html>
+
