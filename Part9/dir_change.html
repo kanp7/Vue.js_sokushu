@@ -1,0 +1,26 @@
+
+<!-- 親コンポーネントの監視 -->
+
+<!DOCTYPEhtml>
+  <htmllang="ja">
+
+    <head>
+      <metacharset="UTF8" />
+      <title>速習Vue.js</title>
+    </head>
+
+    <body>
+      <div id="app">
+        <select v-model="color">
+          <option value="Yellow">黄</option>
+          <option value="Black">黒</option>
+          <option value="Lime">ライム</option>
+        </select>
+        <p>JavaScriptフレームワークの代表として、Angular、React、<span v-highlight="color">Vue.js</span>などが挙げられます。</p>
+      </div>
+        <script src="https://unpkg.com/vue@3.0.0/dist/vue.global.js"> </script> 
+        <script src="./lib/dir_change.js"></script>
+    </body>
+
+    </html>
+
